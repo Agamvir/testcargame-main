@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <script src="sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweetalert.css"/>
+
+    <script>
+      var firebaseConfig = {
+    apiKey: "AIzaSyBwvuaN0fd1Up0FdMn1GDkkLcZyiWEQ9to",
+    authDomain: "multiplayercarrace-b525b.firebaseapp.com",
+    databaseURL: "https://multiplayercarrace-b525b-default-rtdb.firebaseio.com",
+    projectId: "multiplayercarrace-b525b",
+    storageBucket: "multiplayercarrace-b525b.appspot.com",
+    messagingSenderId: "1052717164008",
+    appId: "1:1052717164008:web:1fd72f8ccb0cfc07b8b05d"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
